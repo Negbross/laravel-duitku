@@ -1,5 +1,6 @@
 <?php
 
+
 return [
     'env' => env('DUITKU_ENV', 'production'),
     'merchant_code' => env('DUITKU_MERCHANT_CODE', ''),
