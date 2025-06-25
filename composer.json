@@ -4,6 +4,7 @@
     "keywords": ["laravel", "duitku", "laravel duitku"],
     "homepage": "https://github.com/Negbross/laravel-duitku",
     "type": "library",
+    "version": "1.0",
     "license": "MIT",
     "authors": [
         {
