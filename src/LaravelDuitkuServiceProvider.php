@@ -1,8 +1,8 @@
 <?php
 
-namespace AdityaDarma\LaravelDuitku;
+namespace Negbross\LaravelDuitku;
 
-use AdityaDarma\LaravelDuitku\Console\LaravelDuitkuInstallCommand;
+use Negbross\LaravelDuitku\Console\LaravelDuitkuInstallCommand;
 use Illuminate\Support\ServiceProvider;
 
 class LaravelDuitkuServiceProvider extends ServiceProvider

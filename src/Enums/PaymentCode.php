@@ -1,6 +1,6 @@
 <?php
 
-namespace AdityaDarma\LaravelDuitku\Enums;
+namespace Negbross\LaravelDuitku\Enums;
 
 enum PaymentCode: string
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace AdityaDarma\LaravelDuitku;
+namespace Negbross\LaravelDuitku;
 
-use AdityaDarma\LaravelDuitku\Enums\ResponseCode;
-use AdityaDarma\LaravelDuitku\Exceptions\DuitkuResponseException;
-use AdityaDarma\LaravelDuitku\Exceptions\InvalidSignatureException;
-use AdityaDarma\LaravelDuitku\Exceptions\MissingParamaterException;
-use AdityaDarma\LaravelDuitku\Exceptions\PaymentMethodUnavailableException;
-use AdityaDarma\LaravelDuitku\Exceptions\TransactionNotFoundException;
+use Negbross\LaravelDuitku\Enums\ResponseCode;
+use Negbross\LaravelDuitku\Exceptions\DuitkuResponseException;
+use Negbross\LaravelDuitku\Exceptions\InvalidSignatureException;
+use Negbross\LaravelDuitku\Exceptions\MissingParamaterException;
+use Negbross\LaravelDuitku\Exceptions\PaymentMethodUnavailableException;
+use Negbross\LaravelDuitku\Exceptions\TransactionNotFoundException;
 use Illuminate\Http\Client\RequestException;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Validator;

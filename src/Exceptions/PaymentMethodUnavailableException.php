@@ -1,6 +1,6 @@
 <?php
 
-namespace AdityaDarma\LaravelDuitku\Exceptions;
+namespace Negbross\LaravelDuitku\Exceptions;
 
 use Exception;
 

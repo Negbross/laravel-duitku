@@ -1,8 +1,8 @@
 <?php
 
-namespace AdityaDarma\LaravelDuitku\Console;
+namespace Negbross\LaravelDuitku\Console;
 
-use AdityaDarma\LaravelDuitku\LaravelDuitkuServiceProvider;
+use Negbross\LaravelDuitku\LaravelDuitkuServiceProvider;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
 

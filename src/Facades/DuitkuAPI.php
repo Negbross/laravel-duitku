@@ -1,6 +1,6 @@
 <?php
 
-namespace AdityaDarma\LaravelDuitku\Facades;
+namespace Negbross\LaravelDuitku\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static object checkTransactionStatus(string $merchantOrderId)
  * @method static object getNotificationTransaction()
  *
- * @see \AdityaDarma\LaravelDuitku\LaravelDuitku
+ * @see \Negbross\LaravelDuitku\LaravelDuitku
  */
 class DuitkuAPI extends Facade
 {

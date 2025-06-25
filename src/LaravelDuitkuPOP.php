@@ -1,11 +1,11 @@
 <?php
 
-namespace AdityaDarma\LaravelDuitku;
+namespace Negbross\LaravelDuitku;
 
-use AdityaDarma\LaravelDuitku\Enums\ResponseCode;
-use AdityaDarma\LaravelDuitku\Exceptions\DuitkuResponseException;
-use AdityaDarma\LaravelDuitku\Exceptions\InvalidSignatureException;
-use AdityaDarma\LaravelDuitku\Exceptions\MissingParamaterException;
+use Negbross\LaravelDuitku\Enums\ResponseCode;
+use Negbross\LaravelDuitku\Exceptions\DuitkuResponseException;
+use Negbross\LaravelDuitku\Exceptions\InvalidSignatureException;
+use Negbross\LaravelDuitku\Exceptions\MissingParamaterException;
 use Illuminate\Http\Client\RequestException;
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Http;

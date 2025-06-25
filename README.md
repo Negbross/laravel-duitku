@@ -5,7 +5,7 @@ Laravel Duitku is package to provide payment gateway Duitku.
 1. From your projects root folder in terminal run:
 
    ```bash
-   composer require adityadarma/laravel-duitku
+   composer require negbross/laravel-duitku
    ```
 
 2. Install config:
@@ -35,7 +35,7 @@ DUITKU_RETURN_URL=https://example.com/return
 example:
 
 ```php
-use AdityaDarma\LaravelDuitku\Facades\DuitkuAPI;
+use Negbross\LaravelDuitku\Facades\DuitkuAPI;
 
 $listPayments = DuitkuAPI::getPaymentMethod(1000000);
 ```
@@ -44,15 +44,15 @@ $listPayments = DuitkuAPI::getPaymentMethod(1000000);
 example:
 
 ```php
-use AdityaDarma\LaravelDuitku\Facades\DuitkuAPI;
+use Negbross\LaravelDuitku\Facades\DuitkuAPI;
 
 DuitkuAPI::createTransaction([
     'merchantOrderId'   => 10000,
-    'customerVaName'    => 'Aditya Darma',
+    'customerVaName'    => 'Super negbros',
     'email'             => 'email@example.com',
     'paymentAmount'     => 100000,
     'paymentMethod'     => 'VC',
-    'productDetails'    => 'Buy Company',
+    'productDetails'    => 'Buy Ferrari',
     'expiryPeriod'      => 10,  // optional (minute)
     'phoneNumber'       => '08123456789', // optional
     'itemDetails'       => [ // optional
@@ -67,8 +67,8 @@ DuitkuAPI::createTransaction([
         ]
     ],
     'customerDetail'    => [ // optional
-        'firstName'         => 'Aditya',
-        'lastName'          => 'Darma',
+        'firstName'         => 'Super',
+        'lastName'          => 'Negbros',
         'email'             => 'email@example.com',
         'phoneNumber'       => $phoneNumber,
         'billingAddress'    => $address,
@@ -84,7 +84,7 @@ DuitkuAPI::createTransaction([
 example:
 
 ```php
-use AdityaDarma\LaravelDuitku\Facades\DuitkuAPI;
+use Negbross\LaravelDuitku\Facades\DuitkuAPI;
 
 DuitkuAPI::checkTransactionStatus(1000000);
 ```
@@ -93,7 +93,7 @@ DuitkuAPI::checkTransactionStatus(1000000);
 example:
 
 ```php
-use AdityaDarma\LaravelDuitku\Facades\DuitkuAPI;
+use Negbross\LaravelDuitku\Facades\DuitkuAPI;
 
 $payment = DuitkuAPI::getNotificationTransaction();
 ```
@@ -104,11 +104,11 @@ $payment = DuitkuAPI::getNotificationTransaction();
 example:
 
 ```php
-use AdityaDarma\LaravelDuitku\Facades\DuitkuPOP;
+use Negbross\LaravelDuitku\Facades\DuitkuPOP;
 
 DuitkuPOP::createTransaction([
     'merchantOrderId'   => 10000,
-    'customerVaName'    => 'Aditya Darma',
+    'customerVaName'    => 'Super negbros',
     'email'             => 'email@example.com',
     'paymentAmount'     => 100000,
     'productDetails'    => 'Buy Company',
@@ -126,8 +126,8 @@ DuitkuPOP::createTransaction([
         ]
     ],
     'customerDetail'    => [ // optional
-        'firstName'         => 'Aditya',
-        'lastName'          => 'Darma',
+        'firstName'         => 'Super',
+        'lastName'          => 'Negbross',
         'email'             => 'email@example.com',
         'phoneNumber'       => $phoneNumber,
         'billingAddress'    => $address,
@@ -178,7 +178,7 @@ checkout.process("DXXXXS875LXXXX32IJZ7", {
 example:
 
 ```php
-use AdityaDarma\LaravelDuitku\Facades\DuitkuPOP;
+use Negbross\LaravelDuitku\Facades\DuitkuPOP;
 
 $payment = DuitkuPOP::getNotificationTransaction();
 ```

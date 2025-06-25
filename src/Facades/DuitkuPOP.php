@@ -1,6 +1,6 @@
 <?php
 
-namespace AdityaDarma\LaravelDuitku\Facades;
+namespace Negbross\LaravelDuitku\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static object createTransaction(array $data)
  * @method static object getNotificationTransaction()
  *
- * @see \AdityaDarma\LaravelDuitku\LaravelDuitku
+ * @see \Negbross\LaravelDuitku\LaravelDuitku
  */
 class DuitkuPOP extends Facade
 {
